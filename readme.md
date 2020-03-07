@@ -25,54 +25,53 @@
 ## Modelo de Dados do Formulário
 
 * casal
-** noivo
-*** nome 
-**** type: String
-**** required
-*** idade
-**** type: Number
-**** required
-*** genero
-**** type: String
-**** required
-** noiva
-*** nome 
-**** type: String
-**** required
-*** idade
-**** type: Number
-**** required
-*** genero
-**** type: String
-**** required
-** local
-*** cidade
-**** type: String
-**** required
-*** estado
-**** type: String
-**** required
-** contato
-*** nomeContato
-**** type: String
-**** required
-*** email
-**** type: String
-**** required
-*** telefone
-**** type: String
-** data
-*** diaCasamento
-**** type: Number
-*** mesCasamento
-**** Number
-**** required
-*** anoCasamento
-**** Number
-**** required
-*** periodoCasamento
-**** String
-
+	* noivo
+		* nome 
+			* type: String
+			* required
+		* idade
+			* type: Number
+			* required
+		* genero
+			* type: String
+			* required
+	* noiva
+		* nome 
+			* type: String
+			* required
+		* idade
+			* type: Number
+			* required
+		* genero
+			* type: String
+			* required
+	* local
+		* cidade
+			* type: String
+			* required
+		* estado
+			* type: String
+			* required
+	* contato
+		* nomeContato
+			* type: String
+			* required
+		* email
+			* type: String
+			* required
+		* telefone
+			* type: String
+	* data
+		* diaCasamento
+			* type: Number
+		* mesCasamento
+			* type: Number
+			* required
+		* anoCasamento
+			* type: Number
+			* required
+		* periodoCasamento
+			* type: String
         
 ## Rotas
 *    **[POST]** /api/signup --> registrar novo usuario
