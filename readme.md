@@ -1,4 +1,7 @@
-# Dependencies
+# CasaNet Form API
+*API para cadastro de novas propostas de casamentos com autenticação via token*
+
+## Dependencies
 *  bcrypt-nodejs@^0.0.3 
 *  body-parser@^1.19.0
 *  bulma@^0.8.0
@@ -16,12 +19,12 @@
 *  request@^2.81.0
 *  sessionstorage@^0.1.0
 
-# Installation
+## Installation
 
 **npm install -y**
 
-# Routes
-*    **[POST]** /api/signup --> to register new user
-*    **[POST]** /api/signin --> to signin and receive folder
-*    **[POST]** /api/wedding --> to register new wedding appliance
-*    **[GET]** /api/wedding --> to get list of registered weddings
+## Routes
+*    **[POST]** /api/signup --> registrar novo usuario
+*    **[POST]** /api/signin --> logar
+*    **[POST]** /api/wedding --> postar nova proposta de casamento
+*    **[GET]** /api/wedding --> receber lista de propostas de casamento cadastradas
