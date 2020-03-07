@@ -16,8 +16,6 @@
 *  morgan@^1.9.1
 *  passport@^0.4.1
 *  passport-jwt@^4.0.0
-*  request@^2.81.0
-*  sessionstorage@^0.1.0
 
 ## Installation
 

@@ -51,9 +51,9 @@ router.post('/signup', function(req, res) {
             // if user is found and password is right create a token
             var token = jwt.sign(user.toJSON(), config.secret, {expiresIn: 90000});
             // return the information including token as JSON
-            //res.json({success: true, token: 'JWT ' + token})
-            sessionStorage.setItem("token", token);
-            res.redirect('../index_bkp.html');
+            res.json({success: true, token: 'JWT ' + token})
+            //sessionStorage.setItem("token", token);
+            //res.redirect('../index_bkp.html');
           } else {
             res.status(401).send({success: false, msg: 'Authentication failed. Wrong password.'});
           }
