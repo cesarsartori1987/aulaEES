@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <title>Casanet - Curta seu casamento do começo ao fim, literalmente</title>
+    </head>
+    <body>
+        <section class="hero is-danger">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">CasaNet</h1>
+                    <h2 class="subtitle">Curta seu casamento do começo ao fim, literalmente</h2>
+                </div>
+            </div>
+        </section>    
+        <div class="container is-fluid" id="wedding">
+            <div class="notification">
+                Preencha o formulário abaixo para te conhecermos melhor e em breve entrarmos em contato!
+            
+            <form action="/api/wedding" method="POST">
+                <!-- Noivo -->
+                <div class="field">
+                    <label class="label">Nome do Noivo</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Noivinho" name="nomeNoivo">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Idade do Noivo</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Idade do Noivinho" id="idadeNoivo">
+                    </div>
+                </div>                
+                <div class="field">
+                    <p class="control">
+                    <label class="label">Gênero do Noivo</label>
+                    <span class="select">
+                        <select id="generoNoivo">
+                        <option selected>Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Indefinido">Indefinido</option>
+                        </select>
+                    </span>
+                    </p>
+                </div>
+
+                <!-- Noiva -->
+                <div class="field">
+                    <label class="label">Nome do Noiva</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Noivinha" id="nomeNoiva">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Idade do Noiva</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Idade do Noivinha" id="idadeNoiva">
+                    </div>
+                </div>                
+                <div class="field">
+                    <p class="control">
+                    <label class="label">Gênero do Noiva</label>
+                    <span class="select">
+                        <select id="generoNoiva">
+                        <option selected>Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Indefinido">Indefinido</option>
+                        </select>
+                    </span>
+                    </p>
+                </div>
+
+                <!-- Local -->
+                <div class="field">
+                    <label class="label">Cidade do Casamento</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Cidade" id="cidade">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Estado do Casamento</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Cidade" id="cidade">
+                    </div>
+                </div>
+                
+                <!-- Contato -->
+                <div class="field">
+                    <label class="label">Nome do Contato</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Contato" id="nomeContato">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">E-mail</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="meu_email@email.com" id="email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Telefone</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="+55 (11) 11111-1111" id="telefone">
+                    </div>
+                </div>
+
+<!-- Contato -->
+                <div class="field">
+                    <label class="label">Nome do Contato</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Contato" id="nomeContato">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">E-mail</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="meu_email@email.com" id="email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Telefone</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="+55 (11) 11111-1111" id="telefone">
+                    </div>
+                </div>
+                
+                <!-- Data -->
+                <div class="field">
+                    <label class="label">Dia do Casamento</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Ex.: 01" id="diaCasamento">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Mês do Casamento</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Ex.: Junho" id="mesCasamento">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Ano do Casamento</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Ex.: 2021" id="anoCasamento">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                    <label class="label">Período do Casamento</label>
+                    <span class="select">
+                        <select id="periodoCasamento">
+                        <option value="Manhã" selected>Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noite">Noite</option>
+                        </select>
+                    </span>
+                    </p>
+                </div>
+                <div class="control">
+                    <button class="button is-link">Enviar formulário</button>
+                  </div>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
