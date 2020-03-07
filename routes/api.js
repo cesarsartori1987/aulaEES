@@ -7,8 +7,11 @@ var jwt = require('jsonwebtoken');
 var router = express.Router();
 var User = require("../models/user");
 
-// alterar para casamento
+var sessionStorage = require('sessionstorage')
+
+
 var initialForm = require("../models/wedding");
+
 
 router.post('/signup', function(req, res) {
     if (!req.body.username || !req.body.password) {
@@ -48,7 +51,9 @@ router.post('/signup', function(req, res) {
             // if user is found and password is right create a token
             var token = jwt.sign(user.toJSON(), config.secret, {expiresIn: 90000});
             // return the information including token as JSON
-            res.json({success: true, token: 'JWT ' + token});
+            //res.json({success: true, token: 'JWT ' + token})
+            sessionStorage.setItem("token", token);
+            res.redirect('../index_bkp.html');
           } else {
             res.status(401).send({success: false, msg: 'Authentication failed. Wrong password.'});
           }
