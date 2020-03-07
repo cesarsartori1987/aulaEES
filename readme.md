@@ -1,5 +1,5 @@
 # CasaNet Form API
-*API para cadastro de novas propostas de casamentos com autenticação via token*
+> *API para cadastro de novas propostas de casamentos com autenticação via token*
 
 ## Dependencies
 *  bcrypt-nodejs@^0.0.3 
@@ -21,7 +21,7 @@
 
 ## Installation
 
-**npm install -y**
+> **npm install -y**
 
 ## Routes
 *    **[POST]** /api/signup --> registrar novo usuario
