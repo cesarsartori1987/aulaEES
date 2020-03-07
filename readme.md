@@ -22,11 +22,11 @@
 *  passport@^0.4.1
 *  passport-jwt@^4.0.0
 
-## Installation
+## Instalação
 
 > **npm install -y**
 
-## Routes
+## Rotas
 *    **[POST]** /api/signup --> registrar novo usuario
 *    **[POST]** /api/signin --> logar
 *    **[POST]** /api/wedding --> postar nova proposta de casamento
