@@ -16,9 +16,9 @@
 *  request@^2.81.0
 *  sessionstorage@^0.1.0
 
-#Installation
+# Installation
 
-## **npm install -y**
+**npm install -y**
 
 # Routes
 *    **[POST]** /api/signup --> to register new user
