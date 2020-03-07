@@ -24,20 +24,20 @@
                 <div class="field">
                     <label class="label">Nome do Noivo</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="Noivinho" name="nomeNoivo">
+                    <input class="input" type="text" placeholder="Noivinho" name="noivo.nome">
                     </div>
                 </div>
                 <div class="field">
                     <label class="label">Idade do Noivo</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="Idade do Noivinho" id="idadeNoivo">
+                    <input class="input" type="text" placeholder="Idade do Noivinho" name="noivo.idade">
                     </div>
                 </div>                
                 <div class="field">
                     <p class="control">
                     <label class="label">Gênero do Noivo</label>
                     <span class="select">
-                        <select id="generoNoivo">
+                        <select name="noivo.genero" id="generoNoivo">
                         <option selected>Selecione</option>
                         <option value="Masculino">Masculino</option>
                         <option value="Feminino">Feminino</option>
@@ -51,20 +51,20 @@
                 <div class="field">
                     <label class="label">Nome do Noiva</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="Noivinha" id="nomeNoiva">
+                    <input class="input" type="text" placeholder="Noivinha" name="noiva.nome" id="nomeNoiva">
                     </div>
                 </div>
                 <div class="field">
                     <label class="label">Idade do Noiva</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="Idade do Noivinha" id="idadeNoiva">
+                    <input class="input" type="text" placeholder="Idade do Noivinha" name="noiva.idade" id="idadeNoiva">
                     </div>
                 </div>                
                 <div class="field">
                     <p class="control">
                     <label class="label">Gênero do Noiva</label>
                     <span class="select">
-                        <select id="generoNoiva">
+                        <select name="noiva.genero" id="generoNoiva">
                         <option selected>Selecione</option>
                         <option value="Masculino">Masculino</option>
                         <option value="Feminino">Feminino</option>
@@ -78,13 +78,13 @@
                 <div class="field">
                     <label class="label">Cidade do Casamento</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="Cidade" id="cidade">
+                    <input class="input" type="text" placeholder="Cidade" name="local.cidade" id="cidade">
                     </div>
                 </div>
                 <div class="field">
                     <label class="label">Estado do Casamento</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="Cidade" id="cidade">
+                    <input class="input" type="text" placeholder="Cidade" name="local.estado" id="cidade">
                     </div>
                 </div>
                 
@@ -92,59 +92,39 @@
                 <div class="field">
                     <label class="label">Nome do Contato</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="Contato" id="nomeContato">
+                    <input class="input" type="text" placeholder="Contato" name="contato.nome" id="nomeContato">
                     </div>
                 </div>
                 <div class="field">
                     <label class="label">E-mail</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="meu_email@email.com" id="email">
+                    <input class="input" type="text" placeholder="meu_email@email.com" name="contato.email" id="email">
                     </div>
                 </div>
                 <div class="field">
                     <label class="label">Telefone</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="+55 (11) 11111-1111" id="telefone">
+                    <input class="input" type="text" placeholder="+55 (11) 11111-1111" name="contato.telefone" id="telefone">
                     </div>
                 </div>
 
-<!-- Contato -->
-                <div class="field">
-                    <label class="label">Nome do Contato</label>
-                    <div class="control">
-                    <input class="input" type="text" placeholder="Contato" id="nomeContato">
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label">E-mail</label>
-                    <div class="control">
-                    <input class="input" type="text" placeholder="meu_email@email.com" id="email">
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label">Telefone</label>
-                    <div class="control">
-                    <input class="input" type="text" placeholder="+55 (11) 11111-1111" id="telefone">
-                    </div>
-                </div>
-                
                 <!-- Data -->
                 <div class="field">
                     <label class="label">Dia do Casamento</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="Ex.: 01" id="diaCasamento">
+                    <input class="input" type="text" placeholder="Ex.: 01" name="data.dia" id="diaCasamento">
                     </div>
                 </div>
                 <div class="field">
                     <label class="label">Mês do Casamento</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="Ex.: Junho" id="mesCasamento">
+                    <input class="input" type="text" placeholder="Ex.: Junho" name="data.mes" id="mesCasamento">
                     </div>
                 </div>
                 <div class="field">
                     <label class="label">Ano do Casamento</label>
                     <div class="control">
-                    <input class="input" type="text" placeholder="Ex.: 2021" id="anoCasamento">
+                    <input class="input" type="text" placeholder="Ex.: 2021" name="data.ano" id="anoCasamento">
                     </div>
                 </div>
 
@@ -152,7 +132,7 @@
                     <p class="control">
                     <label class="label">Período do Casamento</label>
                     <span class="select">
-                        <select id="periodoCasamento">
+                        <select name="data.periodo" id="periodoCasamento">
                         <option value="Manhã" selected>Manhã</option>
                         <option value="Tarde">Tarde</option>
                         <option value="Noite">Noite</option>

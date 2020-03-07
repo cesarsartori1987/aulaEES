@@ -14,6 +14,8 @@ var config = require('./config/database');
 var cors = require('cors');
 var bodyParser = require('body-parser')
 var http = require('http')
+//var request = require('request')
+//var retorno = require('./private/token')
 
 mongoose.connect(config.database, { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -21,6 +23,8 @@ var api = require('./routes/api');
 
 
 var app = express();
+
+//var token = retorno.token
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -39,52 +43,12 @@ app.use(passport.initialize());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+
 app.get('/', function(req, res) {
   res.send('Page under construction.');
 });
 
-/*
-var request = {
-  host: "localhost",
-  port: "3000",
-  path: "/api/signin",
-  method: "POST",
-  body: {
-    username: "cesar-sartori@hotmail.com"
-    ,password: "cesar12345"
-  }
-}
-
-http.request(request, (res) => {
-  var token = res.body.token
-})
-*/
 app.use('/api', api);
-/*
-app.post("/postForm", (req,res) => {
-  console.log('Enviando formulário...')
-  var request = {
-    host: "localhost",
-    port: "3000",
-    path: "/api/wedding",
-    method: "POST",
-    body: { 
-        casal: {
-              noivo: { 
-                nome : req.body.nomeNoivo,
-                idade: req.body.idadeNoivo,
-                genero: req.body.generoNoivo
-              }
-            }
-    }
-  }
-  http.request(request, (res) => {
-    console.log(res)
-  })
-  res.end()           
-})
-*/
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
